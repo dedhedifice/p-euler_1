@@ -1,0 +1,22 @@
+# Here I have the answer to the first archived question on Euler
+# The sum of the multiples of 3 and 5 between 0 and 1000
+# really excited I was able to do this On my own
+# I had some help from google " Python docs" 
+# I didn't Know about the "sum()" and "filter()" until today.
+
+
+def mult_3(n):
+    return n % 3 == 0
+
+print sum(filter(mult_3, range(0, 1001)))
+
+def mult_5(n):
+    return n % 5 == 0
+
+print sum(filter(mult_5, range(0, 1000)))
+
+def mult_3_5(n):
+    return (n % 3 == 0) and (n % 5 == 0)
+print sum(filter(mult_3_5, range(0, 1001)))
+
+print 166833 + 99500 - 33165
